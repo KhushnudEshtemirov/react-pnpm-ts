@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: docker-react-c
+    image: docker-react-i
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - ./node_modules:/app/node_modules
