@@ -11,10 +11,10 @@ const HomePage = () => {
       <p>{value}</p>
       <div className="flex gap-3">
         <button className="border p-2" onClick={() => dispatch(increment())}>
-          Increment
+          Increment by one
         </button>
         <button className="border p-2" onClick={() => dispatch(decrement())}>
-          Decrement
+          Decrement by one
         </button>
       </div>
     </div>
